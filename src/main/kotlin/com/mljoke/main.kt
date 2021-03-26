@@ -19,7 +19,7 @@ fun main(args: Array<String>) {
     }
     //алгоритм 3
     println("Введите набор чисел (через пробел):")
-    serialNumbers = (readLine() as String).split(" ")
+    serialNumbers = readLine()!!.split(" ")
     for (i in serialNumbers) {
         if(i.toInt()%3 == 0)
             print("$i ")
